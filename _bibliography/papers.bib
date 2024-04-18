@@ -1,0 +1,70 @@
+
+@article{naunheim_analysis_2022,
+	title = {Analysis of a convex time skew calibration for light sharing-based {PET} detectors},
+abbr={PMB},
+	issn = {0031-9155},
+	doi = {10.1088/1361-6560/aca872},
+	abstract = {Objective. Positron emission tomography (PET) detectors providing attractive coincidence time resolutions (CTRs) offer time-of-flight information, resulting in an improved signal-to-noise ratio of the PET image. In applications with photosensor arrays that employ timestampers for individual channels, timestamps typically are not time synchronized, introducing time skews due to different signal pathways. The scintillator topology and transportation of the scintillation light might provoke further skews. If not accounted for these effects, the achievable CTR deteriorates. We studied a convex timing calibration based on a matrix equation. In this work, we extended the calibration concept to arbitrary structures targeting different aspects of the time skews and focusing on optimizing the CTR performance for detector characterization. The radiation source distribution, the stability of the estimations, and the energy dependence of calibration data are subject to the analysis. Approach. A coincidence setup, equipped with a semi-monolithic detector comprising 8 LYSO slabs, each 3.9mm×31.9mm×19.0mm, and a one-to-one coupled detector with 8×8 LYSO segments of 3.9mm×3.9mm×19.0mm volume is used. Both scintillators utilize a dSiPM (DPC3200-22-44, Philips Digital Photon Counting) operated in first photon trigger. The calibration was also conducted with solely one-to-one coupled detectors and extrapolated for a slab-only setup. Main results. All analyzed hyperparameters show a strong influence on the calibration. Using multiple radiation positions improved the skew estimation. The statistical significance of the calibration dataset and the utilized energy window was of great importance. Compared to a one-to-one coupled detector pair achieving CTRs of 224 ps the slab detector configuration reached CTRs down to 222 ps, demonstrating that slabs can compete with a clinically used segmented detector design. Significance. This is the first work that systematically studies the influence of hyperparameters on skew estimation and proposes an extension to arbitrary calibration structures (e.g., scintillator volumes) of a known calibration technique.},
+	journal = {Physics in Medicine \& Biology},
+	author = {Naunheim, Stephan and Kuhl, Yannick and Solf, Torsten and Schug, David and Schulz, Volkmar and Mueller, Florian},
+	year = {2022},
+}
+
+@article{naunheim_improving_2023,
+abbr={TNNLS},
+	title = {Improving the {Timing} {Resolution} of {Positron} {Emission} {Tomography} {Detectors} {Using} {Boosted} {Learning}—{A} {Residual} {Physics} {Approach}},
+	issn = {2162-2388},
+	doi = {10.1109/TNNLS.2023.3323131},
+	abstract = {Artificial intelligence (AI) is entering medical imaging, mainly enhancing image reconstruction. Nevertheless, improvements throughout the entire processing, from signal detection to computation, potentially offer significant benefits. This work presents a novel and versatile approach to detector optimization using machine learning (ML) and residual physics. We apply the concept to positron emission tomography (PET), intending to improve the coincidence time resolution (CTR). PET visualizes metabolic processes in the body by detecting photons with scintillation detectors. Improved CTR performance offers the advantage of reducing radioactive dose exposure for patients. Modern PET detectors with sophisticated concepts and read-out topologies represent complex physical and electronic systems requiring dedicated calibration techniques. Traditional methods primarily depend on analytical formulations successfully describing the main detector characteristics. However, when accounting for higher-order effects, additional complexities arise matching theoretical models to experimental reality. Our work addresses this challenge by combining traditional calibration with AI and residual physics, presenting a highly promising approach. We present a residual physics-based strategy using gradient tree boosting and physics-guided data generation. The explainable AI framework SHapley Additive exPlanations (SHAPs) was used to identify known physical effects with learned patterns. In addition, the models were tested against basic physical laws. We were able to improve the CTR significantly (more than 20\%) for clinically relevant detectors of 19 mm height, reaching CTRs of 185 ps (450–550 keV).},
+	journal = {IEEE Transactions on Neural Networks and Learning Systems},
+	author = {Naunheim, Stephan and Kuhl, Yannick and Schug, David and Schulz, Volkmar and Mueller, Florian},
+	year = {2023},
+	pages = {1--13},
+	file = {IEEE Xplore Abstract Record:C\:\\Users\\stephan.naunheim\\Zotero\\storage\\SEH2XG7N\\10288370.html:text/html;IEEE Xplore Full Text PDF:C\:\\Users\\stephan.naunheim\\Zotero\\storage\\DSR7PGMJ\\Naunheim et al. - 2023 - Improving the Timing Resolution of Positron Emissi.pdf:application/pdf},
+url={https://doi.org/10.1109/TNNLS.2023.3323131},
+selected={true}
+}
+
+@article{mueller_semi-monolithic_2022,
+abbr={Med.Phy.},
+	title = {A semi-monolithic detector providing intrinsic {DOI}-encoding and sub-200 ps {CRT} {TOF}-capabilities for clinical {PET} applications},
+	volume = {49},
+	issn = {2473-4209},
+	doi = {10.1002/mp.16015},
+	abstract = {Background Current clinical positron emission tomography (PET) systems utilize detectors where the scintillator typically contains single elements of 3–6-mm width and about 20-mm height. While providing good time-of-flight performance, this design limits the spatial resolution and causes radial astigmatism as the depth-of-interaction (DOI) remains unknown. Purpose We propose an alternative, aiming to combine the advantages of current detectors with the DOI capabilities shown for monolithic concepts, based on semi-monolithic scintillators (slabs). Here, the optical photons spread along one dimension enabling DOI-encoding with a still small readout area beneficial for timing performance. Methods An array of eight monolithic LYSO slabs of dimensions 3.9 × 32 × 19 mm3 was read out by a 64-channel photosensor containing digital SiPMs (DPC3200-22-44, Philips Digital Photon Counting). The position estimation in the detector's monolithic and DOI direction was based on a calibration with a fan beam collimator and the machine learning technique gradient tree boosting (GTB). Results We achieved a positioning performance in terms of mean absolute error (MAE) of 1.44 mm for the monolithic direction and 2.12 mm for DOI considering a wide energy window of 300–700 keV. The energy resolution was determined to be 11.3\%, applying a positional-dependent energy calibration. We established both an analytical and machine-learning-based timing calibration approach and applied them for a first-photon trigger. The analytical timing calibration corrects for electronic and optical time skews leading to 240 ps coincidence resolving time (CRT) for a pair of slab-detectors. The CRT was significantly improved by utilizing GTB to predict the time difference based on specific training data and applied on top of the analytical calibration. We achieved 209 ps for the wide energy window and 198 ps for a narrow selection around the photopeak (411–561 keV). To maintain the detector's sensitivity, no filters were applied to the data during processing. Conclusion Overall, the semi-monolithic detector provides attractive performance characteristics. Especially, a good CRT can be achieved while introducing DOI capabilities to the detector, making the concept suitable for clinical PET scanners.},
+	number = {12},
+	journal = {Medical Physics},
+	author = {Mueller, Florian and Naunheim, Stephan and Kuhl, Yannick and Schug, David and Solf, Torsten and Schulz, Volkmar},
+	year = {2022},
+	keywords = {clinical PET, CRT, CTR, DOI, fan beam collimator, gradient tree boosting, machine learning, monolithic scintillator, PET, positron emission tomography, semi-monolithic scintillator, slabs},
+	pages = {7469--7488},
+}
+
+@article{kuhl_angular_2023,
+abbr={TRPMS},
+	title = {Angular {Irradiation} {Methods} for {DOI} {Calibration} of {Light}-{Sharing} {Detectors} - {A} perspective for {PET} {In}-{System} {Calibration}},
+	issn = {2469-7303},
+	doi = {10.1109/TRPMS.2023.3272015},
+	abstract = {Typical positron emission tomography (PET) detectors consist of one-layer segmented scintillators coupled to silicon photomultipliers (SiPMs). Light-sharing detectors, e.g., semi-monoliths, additionally provide depth-of-interaction (DOI) estimation, performing best when calibrated individually. To establish those designs in large PET systems, scalable (re-)calibration methods are needed, possibly transferable to assembled systems. Here, two DOI calibration methods, potentially allowing in-system calibration, are evaluated and compared with an established calibration scheme. Both methods are based on angular detector irradiation using a fan-beam slit collimator and gradient tree boosting (GTB) for 3-Dimensional (3D) position estimation. The positioning performance was assessed for irradiation angles between 0∘ (lateral) and 90∘ (detector normal). With lateral irradiation, a unique DOI position is given, whereas with angular irradiation a gamma-individual reference position must be retrieved. The first method employs one angular beam and calculates DOI from the beam path and planar position estimation. The second method uses two intersecting beams. The intersection defines DOI for gamma interactions that are spatially localized there. Those gamma photons are identified by light distribution comparison using a nearest-neighbor routine. The methods were evaluated on a semimonolithic LYSO slab detector (32×3.9×19 mm slabs). Both methods performed similarly to the benchmark lateral irradiation within 1 \%, and 6 \%, respectively, for shallow irradiation angles up to 45∘.},
+	journal = {IEEE Transactions on Radiation and Plasma Medical Sciences},
+	author = {Kuhl, Yannick and Naunheim, Stephan and Schug, David and Schulz, Volkmar and Mueller, Florian},
+	year = {2023},
+	keywords = {(semi-) monolithic scintillator, angular beam irradiation, Calibration, Collimators, depth-of-interaction (DOI), Detectors, fan-beam collimator, in-system calibration, Photonics, Positron emission tomography, Scintillators, Slabs},
+	pages = {1--1},
+}
+
+
+
+@article{kuhl_finely_nodate,
+	title = {A finely segmented semi-monolithic detector tailored for high-resolution {PET}},
+abbr={Med.Phy.},
+	copyright = {© 2024 The Authors. Medical Physics published by Wiley Periodicals LLC on behalf of American Association of Physicists in Medicine.},
+	issn = {2473-4209},
+	doi = {10.1002/mp.16928},
+	abstract = {Background Preclinical research and organ-dedicated applications use and require high (spatial-)resolution positron emission tomography (PET) detectors to visualize small structures (early) and understand biological processes at a finer level of detail. Researchers seeking to improve detector and image spatial resolution have explored various detector designs. Current commercial high-resolution systems often employ finely pixelated or monolithic scintillators, each with its limitations. Purpose We present a semi-monolithic detector, tailored for high-resolution PET applications with a spatial resolution in the range of 1 mm or better, merging concepts of monolithic and pixelated crystals. The detector features LYSO slabs measuring (24 × 10 × 1) mm3, coupled to a 12 × 12 readout channel photosensor with 4 mm pitch. The slabs are grouped in two arrays of 44 slabs each to achieve a higher optical photon density despite the fine segmentation. Methods We employ a fan beam collimator for fast calibration to train machine-learning-based positioning models for all three dimensions, including slab identification and depth-of-interaction (DOI), utilizing gradient tree boosting (GTB). The data for all dimensions was acquired in less than 2 h. Energy calculation was based on a position-dependent energy calibration. Using an analytical timing calibration, time skews were corrected for coincidence timing resolution (CTR) estimation. Results Leveraging machine-learning-based calibration in all three dimensions, we achieved high detector spatial resolution: down to 1.18 mm full width at half maximum (FWHM) detector spatial resolution and 0.75 mm mean absolute error (MAE) in the planar-monolithic direction, and 2.14 mm FWHM and 1.03 mm MAE for DOI at an energy window of (435–585) keV. Correct slab interaction identification in planar-segmented direction exceeded 80\%, alongside an energy resolution of 12.7\% and a CTR of 450 ps FWHM. Conclusions The introduced finely segmented, high-resolution slab detector demonstrates appealing performance characteristics suitable for high-resolution PET applications. The current benchtop-based detector calibration routine allows these detectors to be used in PET systems.},
+	year = {2024},
+	journal = {Medical Physics},
+	author = {Kuhl, Yannick and Mueller, Florian and Naunheim, Stephan and Bovelett, Matthias and Lambertus, Janko and Schug, David and Weissler, Bjoern and Gegenmantel, Eike and Gebhardt, Pierre and Schulz, Volkmar},
+	keywords = {high-resolution Positron Emission Tomography (PET), machine learning GTB fan beam calibration, semi-monolith slab detector},
+	file = {Full Text PDF:C\:\\Users\\stephan.naunheim\\Zotero\\storage\\QSER355Q\\Kuhl et al. - A finely segmented semi-monolithic detector tailor.pdf:application/pdf},
+}
