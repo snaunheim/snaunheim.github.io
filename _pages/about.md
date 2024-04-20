@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: about.
 permalink: /
 subtitle: PhD student in Medical Imaging at <a href='https://www.exmi.rwth-aachen.de/cms/~moiue/exmi/?lidx=1'>RWTH Aachen University, Institute for Experimental Molecular Imaging</a>.
 
