@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.exmi.rwth-aachen.de/cms/~moiue/exmi/?lidx=1'>RWTH Aachen University, Institute for Experimental Molecular Imaging</a>.
+subtitle: PhD student in Medical Imaging at <a href='https://www.exmi.rwth-aachen.de/cms/~moiue/exmi/?lidx=1'>RWTH Aachen University, Institute for Experimental Molecular Imaging</a>.
 
 profile:
   align: right
