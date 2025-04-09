@@ -1,22 +1,41 @@
 {
   "basics": {
     "name": "Stephan Naunheim",
-    "position": "PhD Student",
+    "position": "Postdoctoral Scholar",
     "image": "",
     "url": "https://snaunheim.github.io"
   },
   "work": [
+        {
+      "name": "Department of Biomedical Engineering, UC Davis",
+      "position": "Postdoctoral Scholar",
+      "url": "https://bme.ucdavis.edu",
+      "startDate": "2025",
+      "endDate": "",
+      "summary": "Accelerating Monte-Carlo simulations using machine learning.",
+      "highlights": ["TOF-PET", "Machine Learning"]
+    },
     {
       "name": "Institute for Experimental Molecular Imaging, RWTH Aachen University",
       "position": "PhD Student",
       "url": "https://www.exmi.rwth-aachen.de/cms/~moiue/exmi/?lidx=1",
       "startDate": "2021",
-      "endDate": "",
+      "endDate": "2025",
       "summary": "Researching approaches to improve time-of-flight for PET detectors using computational intelligence by incooporating physics domain knowledge into machine learning models.",
-      "highlights": ["TOF-PET", "Machine Learning"]
+      "highlights": ["GATE", "Machine Learning"]
     }
   ],
   "education": [
+        {
+      "institution": "RWTH Aachen University",
+      "location": "Aachen, Germany",
+      "url": "https://www.rwth-aachen.de",
+      "area": "Physics & Medical Imaging",
+      "studyType": "Dr.rer.nat. (PhD)‚",
+      "startDate": "2019",
+      "endDate": "",
+      "score": ""
+    },
     {
       "institution": "RWTH Aachen University",
       "location": "Aachen, Germany",
