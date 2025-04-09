@@ -13,7 +13,7 @@
       "startDate": "2025",
       "endDate": "",
       "summary": "Accelerating Monte-Carlo simulations using machine learning.",
-      "highlights": ["TOF-PET", "Machine Learning"]
+      "highlights": ["GATE", "Machine Learning"]
     },
     {
       "name": "Institute for Experimental Molecular Imaging, RWTH Aachen University",
@@ -22,7 +22,7 @@
       "startDate": "2021",
       "endDate": "2025",
       "summary": "Researching approaches to improve time-of-flight for PET detectors using computational intelligence by incooporating physics domain knowledge into machine learning models.",
-      "highlights": ["GATE", "Machine Learning"]
+      "highlights": ["TOF-PET", "Machine Learning"]
     }
   ],
   "education": [
