@@ -1,17 +1,18 @@
 {
   "basics": {
     "name": "Stephan Naunheim",
+    "title": "Dr. rer. nat.",
     "position": "Postdoctoral Scholar",
-    "image": "",
-    "url": "https://snaunheim.github.io"
+    "image": ""
   },
   "work": [
         {
       "name": "Department of Biomedical Engineering, UC Davis",
       "position": "Postdoctoral Scholar",
       "url": "https://bme.ucdavis.edu",
-      "startDate": "2025",
-      "endDate": "",
+      "location": "Davis, CA, USA",
+      "startDate": "2025-05",
+      "endDate": "now",
       "summary": "Accelerating Monte-Carlo simulations using machine learning.",
       "highlights": ["GATE", "Machine Learning"]
     },
@@ -19,8 +20,9 @@
       "name": "Institute for Experimental Molecular Imaging, RWTH Aachen University",
       "position": "PhD Student",
       "url": "https://www.exmi.rwth-aachen.de/cms/~moiue/exmi/?lidx=1",
-      "startDate": "2021",
-      "endDate": "2025",
+      "location": "Aachen, Germany",
+      "startDate": "2021-12",
+      "endDate": "2025-02",
       "summary": "Researching approaches to improve time-of-flight for PET detectors using computational intelligence by incooporating physics domain knowledge into machine learning models.",
       "highlights": ["TOF-PET", "Machine Learning"]
     }
@@ -30,30 +32,42 @@
       "institution": "RWTH Aachen University",
       "location": "Aachen, Germany",
       "url": "https://www.rwth-aachen.de",
-      "area": "Physics & Medical Imaging",
-      "studyType": "Dr.rer.nat. (PhD)‚",
-      "startDate": "2021",
-      "endDate": "",
-      "score": ""
+      "area": "Instrumentation in Medical Imaging & Artifical Intelligence",
+      "studyType": "Dr.rer.nat. (PhD) in Particle Physics",
+      "startDate": "2021-12",
+      "endDate": "2025-09",
+      "score": "",
+      "thesis": {
+        "title": "Advancing Timing Resolution in PET Detectors: A Machine Learning Approach Leveraging Residual Physics",
+        "url": "www.doi.org/10.18154/RWTH-2025-07731"
+      }
     },
     {
       "institution": "RWTH Aachen University",
       "location": "Aachen, Germany",
       "url": "https://www.rwth-aachen.de",
-      "area": "Physics",
-      "studyType": "M.Sc.",
-      "startDate": "2019",
-      "endDate": "2021",
+      "studyType": "M.Sc. in Experimental Particle Physics",
+      "startDate": "2019-10",
+      "endDate": "2021-10",
+      "score": "Graduated with distinction"
+    },
+    {
+      "institution": "RWTH Aachen University",
+      "location": "Aachen, Germany",
+      "url": "https://www.rwth-aachen.de",
+      "studyType": "B.Sc. in Physics",
+      "startDate": "2016-10",
+      "endDate": "2019-10",
       "score": "Graduated with distinction"
     }
   ],
   "awards": [
     {
       "title": "Christopher J. Thompson Student Paper Award",
-      "date": "2023-11-10",
+      "date": "11/2023",
       "awarder": "IEEE NPSS",
       "url": "https://www.exmi.rwth-aachen.de/cms/exmi/das-institut/preise-und-auszeichnungen/~bfstuf/renommierte-preise-auf-der-nss-mic-2023/?lidx=1",
-      "summary": "Awarded for outstanding student oral or poster papers presented at the NSS and MIC. The awardee will receive cash awards of USD 500 and a certificate."
+      "summary": "Awarded for outstanding student oral or poster papers presented at the NSS and MIC."
     }
   ],
 

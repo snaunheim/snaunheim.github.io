@@ -7,3 +7,27 @@
 
 "Vision":
   color: "#009f36"
+
+"PMB":
+  url: https://iopscience.iop.org/journal/0031-9155
+  color: "#1e73be"
+
+"TNNLS":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=5962385
+  color: "#00629b"
+
+"Med.Phy.":
+  url: https://aapm.onlinelibrary.wiley.com/journal/24734209
+  color: "#7c3aed"
+
+"TRPMS":
+  url: https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=7433213
+  color: "#059669"
+
+"EJNMMI Physics":
+  url: https://ejnmmiphys.springeropen.com/
+  color: "#dc2626"
+
+"Front. Phys.":
+  url: https://www.frontiersin.org/journals/physics
+  color: "#ea580c"

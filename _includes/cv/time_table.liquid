@@ -13,6 +13,79 @@
                     </span>
                   </td>
                 </tr>
+                {% if content.year contains ' - ' or content.year contains '-' %}
+                  <tr>
+                    <td style="padding-top: 0.25rem;">
+                      <p style="font-size: 0.75rem; color: var(--global-text-color); opacity: 0.7; margin: 0; text-align: center;">
+                        {% assign year_parts = content.year | split: ' - ' %}
+                        {% if year_parts.size == 1 %}
+                          {% assign year_parts = content.year | split: '-' %}
+                        {% endif %}
+                        {% assign start_date = year_parts[0] | strip %}
+                        {% assign end_date = year_parts[1] | strip %}
+
+                        {% if start_date contains '/' %}
+                          {% assign start_parts = start_date | split: '/' %}
+                          {% assign start_month = start_parts[0] | plus: 0 %}
+                          {% assign start_year = start_parts[1] | plus: 0 %}
+                        {% else %}
+                          {% assign start_month = 1 %}
+                          {% assign start_year = start_date | plus: 0 %}
+                        {% endif %}
+
+                        {% if end_date == 'now' %}
+                          {% assign end_month = 'now' %}
+                          {% assign end_year = 'now' %}
+                          {% assign current_date = site.time | date: '%Y' %}
+                          {% assign current_month = site.time | date: '%m' | plus: 0 %}
+                          {% assign duration_years = current_date | minus: start_year %}
+                          {% assign duration_months = current_month | minus: start_month %}
+                        {% elsif end_date contains '/' %}
+                          {% assign end_parts = end_date | split: '/' %}
+                          {% assign end_month = end_parts[0] | plus: 0 %}
+                          {% assign end_year = end_parts[1] | plus: 0 %}
+                          {% assign duration_years = end_year | minus: start_year %}
+                          {% assign duration_months = end_month | minus: start_month %}
+                        {% else %}
+                          {% assign end_month = 12 %}
+                          {% assign end_year = end_date | plus: 0 %}
+                          {% assign duration_years = end_year | minus: start_year %}
+                          {% assign duration_months = end_month | minus: start_month %}
+                        {% endif %}
+
+                        {% if duration_months < 0 %}
+                          {% assign duration_years = duration_years | minus: 1 %}
+                          {% assign duration_months = duration_months | plus: 12 %}
+                        {% endif %}
+
+                        {% if duration_years == 0 %}
+                          {% if duration_months == 1 %}
+                            {{ duration_months }} month
+                          {% else %}
+                            {{ duration_months }} months
+                          {% endif %}
+                        {% elsif duration_months == 0 %}
+                          {% if duration_years == 1 %}
+                            {{ duration_years }} year
+                          {% else %}
+                            {{ duration_years }} years
+                          {% endif %}
+                        {% else %}
+                          {% if duration_years == 1 %}
+                            {{ duration_years }} year
+                          {% else %}
+                            {{ duration_years }} years
+                          {% endif %}
+                          {% if duration_months == 1 %}
+                            , {{ duration_months }} month
+                          {% else %}
+                            , {{ duration_months }} months
+                          {% endif %}
+                        {% endif %}
+                      </p>
+                    </td>
+                  </tr>
+                {% endif %}
                 {% if content.location %}
                   <tr>
                     <td>
