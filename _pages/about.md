@@ -5,13 +5,12 @@ permalink: /
 subtitle: Postdoctoral Scholar – <a href='https://bme.ucdavis.edu'>UC Davis, Department of Biomedical Engineering</a>
 
 profile:
-  align: right
-  image: prof_pic.jpg
+  image: landscape.jpg
   image_circular: false # crops the image to make it circular
-  #more_info: > 
-    #<p>555 your office number</p>
-    #<p>123 your address street</p>
-    #<p>Your City, State 12345</p>
+  more_info: >
+    <p style="text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: var(--global-text-color-light);">
+      A moment from PhD defense. More information can be found <a href="https://lnkd.in/eV9dZxMy" target="_blank" rel="noopener noreferrer">here</a>.
+    </p>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"

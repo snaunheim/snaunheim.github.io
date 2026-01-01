@@ -283,11 +283,20 @@
               href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user={{ site.scholar_userid }}&citation_for_view={{ site.scholar_userid }}:{{ entry.google_scholar_id }}"
               aria-label="Google Scholar link"
               role="button"
+              rel="external nofollow noopener"
+              target="_blank"
             >
-              <img
-                src="https://img.shields.io/badge/scholar-{% google_scholar_citations site.scholar_userid entry.google_scholar_id %}-4285F4?logo=googlescholar&labelColor=beige"
-                alt="{% google_scholar_citations site.scholar_userid entry.google_scholar_id %} Google Scholar citations"
-              >
+              {% if entry.doi %}
+                <img
+                  src="https://img.shields.io/endpoint?url=https://api.juleskreuer.eu/citation-badge.php?doi={{ entry.doi | url_encode }}%26shield=true&color=0076df&style=flat-square"
+                  alt="Google Scholar citations"
+                >
+              {% else %}
+                <img
+                  src="https://img.shields.io/badge/scholar-N/A-0076df?logo=googlescholar&labelColor=555&style=flat-square"
+                  alt="Google Scholar citations not available"
+                >
+              {% endif %}
             </a>
           {% endif %}
         </div>
