@@ -9,7 +9,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p style="text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: var(--global-text-color-light);">
-      A moment from PhD defense. More information can be found <a href="https://lnkd.in/eV9dZxMy" target="_blank" rel="noopener noreferrer">here</a>.
+      A moment from PhD defense.
     </p>
 
 news: false # includes a list of news items
