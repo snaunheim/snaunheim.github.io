@@ -2,65 +2,53 @@
   {% assign education = data[1] | sort: 'startDate' | reverse %}
   {% for content in education %}
     <li class="list-group-item">
-      <div class="row">
-        <div class="col-xs-2 cl-sm-2 col-md-2 text-center" style="width: 75px; margin-right: 1.5rem; margin-left: -0.5rem;">
-          {% if content.startDate and content.startDate != '' %}
-            {% assign start_parts = content.startDate | split: '-' %}
-            {% assign start_display = start_parts[1] | append: '/' | append: start_parts[0] %}
-            {% assign date = start_display | append: ' - ' %}
-            {% if content.endDate == 'now' or content.endDate == '' %}
-              {% assign date = date | append: 'now' %}
-              {% assign displayEndDate = 'now' %}
-            {% else %}
-              {% assign end_parts = content.endDate | split: '-' %}
-              {% assign end_display = end_parts[1] | append: '/' | append: end_parts[0] %}
-              {% assign date = date | append: end_display %}
-              {% assign displayEndDate = content.endDate %}
-            {% endif %}
-          {% else %}
-            {% assign date = null %}
-          {% endif %}
-          <table class="table-cv">
-            <tbody>
-              <tr>
-                <td style="padding-bottom: 0.5rem; padding-top: 0;">
-                  {% if date %}
-                    <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="min-width: 75px"> {{ date }} </span>
-                  {% endif %}
-                </td>
-              </tr>
-              {% if content.location %}
-                <tr>
-                  <td>
-                    <p class="location">
-                      <i class="fa-solid fa-location-dot iconlocation"></i>
-                      {{ content.location }}
-                    </p>
-                  </td>
-                </tr>
-              {% endif %}
-            </tbody>
-          </table>
-        </div>
-        <div class="col-xs-10 cl-sm-10 col-md-10" style="padding-left: 0; flex: 1; max-width: calc(100% - 90px); overflow-wrap: break-word; word-wrap: break-word;">
-          <h6 class="title font-weight-bold ml-1 ml-md-4" style="overflow-wrap: break-word; word-wrap: break-word; margin-top: 0;">
-            <a href="{{ content.url }}">{{ content.studyType }}</a>
-          </h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; overflow-wrap: break-word; word-wrap: break-word;">{{ content.institution }}</h6>
-          <h6 class="ml-1 ml-md-4" style="font-size: 0.95rem; font-style: italic; overflow-wrap: break-word; word-wrap: break-word;">{{ content.area }}</h6>
-          {% if content.thesis %}
-            <p class="ml-1 ml-md-4" style="font-size: 0.9rem; margin-top: 0.5rem; word-wrap: break-word; overflow-wrap: break-word;">
-              <strong>Thesis:</strong> <a href="https://{{ content.thesis.url }}" target="_blank" style="word-wrap: break-word; overflow-wrap: break-word;">{{ content.thesis.title }}</a>
-            </p>
-          {% endif %}
-          <ul class="items">
-            {% for item in content.courses %}
-              <li>
-                <span class="item">{{ item }}</span>
-              </li>
-            {% endfor %}
-          </ul>
-        </div>
+      {% if content.startDate and content.startDate != '' %}
+        {% assign start_parts = content.startDate | split: '-' %}
+        {% assign start_display = start_parts[1] | append: '/' | append: start_parts[0] %}
+        {% assign date = start_display | append: ' - ' %}
+        {% if content.endDate == 'now' or content.endDate == '' %}
+          {% assign date = date | append: 'now' %}
+          {% assign displayEndDate = 'now' %}
+        {% else %}
+          {% assign end_parts = content.endDate | split: '-' %}
+          {% assign end_display = end_parts[1] | append: '/' | append: end_parts[0] %}
+          {% assign date = date | append: end_display %}
+          {% assign displayEndDate = content.endDate %}
+        {% endif %}
+      {% else %}
+        {% assign date = null %}
+      {% endif %}
+
+      <div class="mb-2">
+        {% if date %}
+          <span class="badge font-weight-bold danger-color-dark text-uppercase align-middle" style="white-space: nowrap;"> {{ date }} </span>
+        {% endif %}
+        {% if content.location %}
+          <span class="location ml-2" style="font-size: 0.85rem;">
+            <i class="fa-solid fa-location-dot iconlocation"></i>
+            {{ content.location }}
+          </span>
+        {% endif %}
+      </div>
+
+      <div>
+        <h6 class="title font-weight-bold" style="margin-top: 0;">
+          <a href="{{ content.url }}">{{ content.studyType }}</a>
+        </h6>
+        <h6 style="font-size: 0.95rem;">{{ content.institution }}</h6>
+        <h6 style="font-size: 0.95rem; font-style: italic;">{{ content.area }}</h6>
+        {% if content.thesis %}
+          <p style="font-size: 0.9rem; margin-top: 0.5rem;">
+            <strong>Thesis:</strong> <a href="https://{{ content.thesis.url }}" target="_blank">{{ content.thesis.title }}</a>
+          </p>
+        {% endif %}
+        <ul class="items">
+          {% for item in content.courses %}
+            <li>
+              <span class="item">{{ item }}</span>
+            </li>
+          {% endfor %}
+        </ul>
       </div>
     </li>
   {% endfor %}
