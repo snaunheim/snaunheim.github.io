@@ -9,7 +9,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p style="text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: var(--global-text-color-light);">
-      A moment from PhD defense.
+      A moment from my PhD defense.
     </p>
 
 news: false # includes a list of news items
@@ -18,4 +18,4 @@ social: true # includes social icons at the bottom of the page
 ---
 
 I am a Postdoctoral Scholar in the Department of Biomedical Engineering at the University of California, Davis, working
-under the guidance of Professor Dr. <a href='https://roncalilab.engineering.ucdavis.edu'>Emilie Roncali</a>. My research focuses on combining physics and artificial intelligence to advance the field of medical imaging. My goal is to integrate domain-specific physical knowledge into AI models, enabling the development of impactful medical imaging technologies.
+under the guidance of Professor Dr. Emilie Roncali. My research focuses on combining physics and artificial intelligence to advance the field of medical imaging. My goal is to integrate domain-specific physical knowledge into AI models, enabling the development of impactful medical imaging technologies.
