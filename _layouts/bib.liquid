@@ -288,8 +288,8 @@
             >
               {% if entry.doi %}
                 <img
-                  src="https://img.shields.io/endpoint?url=https://api.juleskreuer.eu/citation-badge.php?doi={{ entry.doi | url_encode }}%26shield=true&color=0076df&style=flat-square"
-                  alt="Google Scholar citations"
+                  src="https://img.shields.io/badge/dynamic/json?url=https://api.openalex.org/works/https://doi.org/{{ entry.doi | url_encode }}&query=$.cited_by_count&label=Citations&color=0076df&style=flat-square"
+                  alt="Citations"
                 >
               {% else %}
                 <img
