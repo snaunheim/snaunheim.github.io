@@ -288,7 +288,7 @@
             >
               {% if entry.doi %}
                 <img
-                  src="https://img.shields.io/badge/dynamic/json?url=https://api.openalex.org/works/https://doi.org/{{ entry.doi | url_encode }}&query=$.cited_by_count&label=Citations&color=0076df&style=flat-square"
+                  src="https://img.shields.io/badge/dynamic/json?url=https://api.crossref.org/works/{{ entry.doi | url_encode }}&query=$.message.is-referenced-by-count&label=Citations&color=0076df&style=flat-square"
                   alt="Citations"
                 >
               {% else %}
