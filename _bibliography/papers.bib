@@ -38,8 +38,7 @@ abbr={TNNLS},
 	author = {Naunheim, Stephan and Kuhl, Yannick and Schug, David and Schulz, Volkmar and Mueller, Florian},
 	year = {2023},
 	pages = {1--13},
-	file = {IEEE Xplore Abstract Record:C\:\\Users\\stephan.naunheim\\Zotero\\storage\\SEH2XG7N\\10288370.html:text/html;IEEE Xplore Full Text PDF:C\:\\Users\\stephan.naunheim\\Zotero\\storage\\DSR7PGMJ\\Naunheim et al. - 2023 - Improving the Timing Resolution of Positron Emissi.pdf:application/pdf},
-url={https://doi.org/10.1109/TNNLS.2023.3323131},
+	url={https://doi.org/10.1109/TNNLS.2023.3323131},
 altmetric={142198472},
 google_scholar_id={qjMakFHDy7sC},
 selected={true}
@@ -89,8 +88,7 @@ abbr={Med.Phy.},
 	journal = {Medical Physics},
 	author = {Kuhl, Yannick and Mueller, Florian and Naunheim, Stephan and Bovelett, Matthias and Lambertus, Janko and Schug, David and Weissler, Bjoern and Gegenmantel, Eike and Gebhardt, Pierre and Schulz, Volkmar},
 	keywords = {high-resolution Positron Emission Tomography (PET), machine learning GTB fan beam calibration, semi-monolith slab detector},
-	file = {Full Text PDF:C\:\\Users\\stephan.naunheim\\Zotero\\storage\\QSER355Q\\Kuhl et al. - A finely segmented semi-monolithic detector tailor.pdf:application/pdf},
-google_scholar_id={Y0pCki6q_DkC}
+	google_scholar_id={Y0pCki6q_DkC}
 }
 
 @article{naunheim_rethinking_2025_op,
@@ -107,9 +105,8 @@ abbr={Front. Phys.},
 	month = apr,
 	year = {2025},
 	keywords = {exclude},
-	google_scholar_id={3fE2CSJIrl8C},
-	file = {Full Text PDF:/Users/stephan.naunheim/Zotero/storage/964DV294/Naunheim et al. - 2025 - Rethinking timing residuals advancing PET detectors with explicit TOF corrections.pdf:application/pdf},
-}
+	google_scholar_id={3fE2CSJIrl8C}
+	}
 
 @article{kuhl_3d_2025_op,
 abbr={Med.Phy.},
@@ -127,7 +124,6 @@ abbr={Med.Phy.},
 	year = {2025},
 	keywords = {(semi)-monolithic PET detectors, 3D in-system calibration, machine-learning-based PET detector calibration},
 	pages = {232--245},
-	file = {Full Text PDF:C\:\\Users\\stephan.naunheim\\Zotero\\storage\\FVYHTCB8\\Kuhl et al. - 2025 - 3D in-system calibration method for PET detectors.pdf:application/pdf;Snapshot:C\:\\Users\\stephan.naunheim\\Zotero\\storage\\JAW82QH5\\mp.html:text/html},
 	google_scholar_id={8k81kl-MbHgC}
 }
 
@@ -148,7 +144,21 @@ abbr={EJNMMI Physics},
 	year = {2025},
 	keywords = {Application-specific integrated circuits, ASIC, Coincidence resolution time, FlexTOT, NINO, PET, PETA, PETsys, Positron emission tomography, STiC, Time-of-flight, TOFPET2, Weeroc},
 	pages = {16},
-	file = {Full Text PDF:C\:\\Users\\stephan.naunheim\\Zotero\\storage\\T2UAYEL6\\Nadig et al. - 2025 - ASICs in PET what we have and what we need.pdf:application/pdf},
 	google_scholar_id={kNdYIx-mwKoC}
 }
 
+@article{naunheim_optigan_2026,
+  title = {{{OptiGAN}} for Crystal Arrays: Physics-Informed Generative Modeling of Optical Photon Transport in {{PET}} Detector Arrays},
+  abbr={PMB},
+  shorttitle = {{{OptiGAN}} for Crystal Arrays},
+  author = {Naunheim, Stephan and Pardi, Brandon and Mummaneni, Guneet and Trigila, Carlotta and Roncali, Emilie},
+  year = 2026,
+  journal = {Physics in Medicine \& Biology},
+  issn = {0031-9155},
+  doi = {10.1088/1361-6560/ae95d7},
+  urldate = {2026-08-06},
+  abstract = {Monte Carlo simulations of optical photon transport are computationally prohibitive for large-scale optical systems including detector arrays and PET systems, restricting their practical use to single-crystal studies. This work presents an enhanced conditional generative adversarial network (optiGAN) capable of replacing optical simulations at the crystal array level, extending our previous single-crystal approach to a 3\texttimes 3 BGO detector array. We introduce Fourier feature encoding and a learnable latent mapping network as the modifications enabling stable training on the array geometry, together with a physics-informed loss term enforcing the unit-sphere state space S2 of the generated propagation directions as a soft constraint. Training data requirements are reduced eight-fold by exploiting the array's symmetry. The model is evaluated in three studies: a full array evaluation, a high-resolution study probing generalization, and a pencil beam irradiation study assessing practical applicability. Performance is benchmarked against GATE10/Geant4 ground truth, using the fluctuations between independent Monte Carlo runs. The enhanced optiGAN achieves similarity values within 3{$\sigma$}-agreement of the Monte Carlo baseline across all evaluation conditions. An ablation and attribution analysis shows that the physics-informed loss term reduces low-SSIM bin fractions by a factor of 3.6 on the outer crystals, with a localized trade-off at the central crystal, yielding a net 48\% reduction over the full array. The model transitions from electron-emission training data to realistic {$\gamma$}-photon interactions, producing flood maps that reproduce experimental patterns including photopeak clusters and inter-crystal scatter lines. This proof-of-concept demonstrates that a physics-informed generative model can simulate optical photon transport in segmented scintillator arrays at a training and inference cost accessible on a single workstation GPU. This provides a foundation for future models capable of generalizing across diverse array configurations.},
+  pmid = {42556413},
+  keywords = {GAN,GATE,PET,physics-informed,simulation},
+  google_scholar_id={4TOpqqG69KYC}
+}

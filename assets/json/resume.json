@@ -78,6 +78,25 @@
     }
   ],
 
+  "journalRoles": [
+    {
+      "role": "Reviewer",
+      "organizations": [
+        "IOP Physics in Medicine & Biology",
+        "IEEE Transactions on Radiation and Plasma Medical Sciences",
+        "IEEE Transactions on Neural Networks and Learning Systems",
+        "EJNMMI Physics",
+        "Sensors"
+      ]
+    },
+    {
+      "role": "Topic Editor",
+      "organizations": [
+        "Frontiers in Sensors"
+      ]
+    }
+  ],
+
   "skills": [
     {
       "name": "Physics",
